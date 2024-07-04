@@ -1,0 +1,6 @@
+[0;30;43mCpp extension not loaded[0m
+>>SEED: 2020
+[0;30;43mloading [../data/recsys][0m
+402312 interactions for training
+100578 interactions for testing
+recsys Sparsity : 0.001445634480389728
