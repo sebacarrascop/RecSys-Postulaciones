@@ -1,0 +1,10 @@
+body {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#map svg {
+  margin: 5px;
+}
