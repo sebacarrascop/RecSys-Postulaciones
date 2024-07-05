@@ -3,8 +3,10 @@ const height_map = 800
 
 
 radius_max = 3
+square_side = 7
 
-d3.select("#Title").text("Postulaciones y Vacantes tienen escalas separadas")
+
+d3.select("#Title").text("LightFM")
 
 const map = d3.select("#map").append("svg")
     .attr("width", width_map)
@@ -78,7 +80,7 @@ function joinRecomendaciones(datos) {
             .attr("transform", d => `translate(${proyeccion([d.lon, d.lat])})`)
             .attr("fill", d => d.color)
             .attr("r", 3)
-            .attr("opacity", 0.2)
+            .attr("opacity", 1)
     }
 
     puntos.selectAll(".establecimiento")
@@ -100,8 +102,10 @@ function joinPostulantes(datos) {
             .attr("class", "postulante")
             .attr("transform", d => `translate(${proyeccion([d.lon, d.lat])})`)
             .attr("fill", d => d.color)
-            .attr("width", 3)
-            .attr("height", 3)
+            .attr("width", square_side)
+            .attr("height", square_side)
+            .attr("stroke", "black")
+            .attr("stroke-width", 1)
     }
 
     puntos.selectAll(".postulante")
