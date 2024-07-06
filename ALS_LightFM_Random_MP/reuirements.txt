@@ -1,0 +1,5 @@
+lightfm
+Pandas
+Numpy
+implicit
+scikit-learn
